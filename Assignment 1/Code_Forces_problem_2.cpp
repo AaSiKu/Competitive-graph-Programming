@@ -4,12 +4,12 @@
 # include <math.h>
 using namespace std;
 int TimeTaken(int t1 , int t2, int p1,int p2,int distance){
-    float speed = float(p2-p1)/(t2-t1);
-    cout<<speed<<endl;
-    cout<<t1<<endl;
-    cout<<distance<<endl;
-    cout<<int(distance/speed)<<endl;
-    return floor(distance/speed)+t1;
+    // float speed = float(p2-p1)/(t2-t1);
+    // cout<<speed<<endl;
+    // cout<<t1<<endl;
+    // cout<<distance<<endl;
+    // cout<<int(distance/speed)<<endl;
+    return int((float(distance)/(p2-p1))*(t2-t1))+t1;
 
 }
 
